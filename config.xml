@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.hybridapps.woocommerce" version="1.5.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.hybridapps.woocommerce" version="1.5.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
   <name>Ionic WooCommerce API</name>
   <description>
     Ionic WooCommerce API Application is an eCommerce Ionic Application compatible with WooCommerce.
   </description>
   <content src="index.html"/>
   <access origin="*"/>
-  <allow-navigation href="*" />
-  <plugin name="cordova-plugin-whitelist" />
-  <plugin name="com.paypal.cordova.mobilesdk" source="npm" />
   <preference name="webviewbounce" value="false"/>
   <preference name="UIWebViewBounce" value="false"/>
   <preference name="DisallowOverscroll" value="true"/>
@@ -19,6 +16,9 @@
   <feature name="StatusBar">
     <param name="ios-package" value="CDVStatusBar" onload="true"/>
   </feature>
+  <gap:plugin name="com.paypal.cordova.mobilesdk" spec="3.1.18" source="npm" />
+  <gap:plugin name="cordova-plugin-whitelist" source="npm"/>
+  <gap:plugin name="cordova-plugin-inappbrowser" source="npm"/>
   <platform name="android">
     <icon src="resources/android/icon/drawable-ldpi-icon.png" density="ldpi"/>
     <icon src="resources/android/icon/drawable-mdpi-icon.png" density="mdpi"/>
